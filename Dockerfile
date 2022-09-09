@@ -12,6 +12,7 @@ RUN groupadd -r uwsgi && useradd -r -g uwsgi uwsgi
 
 
 COPY app ./app
+COPY tests ./tests
 COPY cmd.sh ./
 
 EXPOSE 9090 9191
